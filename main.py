@@ -35,7 +35,7 @@ def main():
                 exit(0)
             for shot in Shoots :
                 if obj.col_det(shot):
-                    pygame.sprite.Sprite.kill(obj)
+                    obj.split()
                     pygame.sprite.Sprite.kill(shot)
         
         screen.fill("black")
