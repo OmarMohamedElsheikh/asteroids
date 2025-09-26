@@ -20,3 +20,10 @@ class CircleShape(pygame.sprite.Sprite):
     def update(self, dt):
         # sub-classes must override
         pass
+    def col_det(self , obj):
+        dis = pygame.Vector2.distance_to(self.position,obj.position)
+        if dis <= self.radius + obj.radius:
+            return True
+        return False
+
+        
