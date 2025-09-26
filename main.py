@@ -33,6 +33,11 @@ def main():
             if obj.col_det(player):
                 print("Game over!")
                 exit(0)
+            for shot in Shoots :
+                if obj.col_det(shot):
+                    pygame.sprite.Sprite.kill(obj)
+                    pygame.sprite.Sprite.kill(shot)
+        
         screen.fill("black")
         for obj in drawable:
             obj.draw(screen)
