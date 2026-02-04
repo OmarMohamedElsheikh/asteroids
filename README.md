@@ -40,7 +40,6 @@ This is a simple implementation of the classic Asteroids game using Pygame.
 * `asteroidfeild.py`: Manages the asteroid field.
 * `shot.py`: Defines the Shot class.
 * `constants.py`: Contains game constants like screen dimensions.
-* `logger.py`: (Potentially for logging game events or debugging)
-* `circleshape.py`: (Likely for handling circular collision detection or drawing)
+* `circleshape.py`: for handling circular collision detection and drawing
 
 
